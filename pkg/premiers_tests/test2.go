@@ -57,4 +57,20 @@ func main() {
 	*/
 	rajouterDix(5, func(x float64) float64 { return math.Pow(x, 2) })
 
+
+	type Personnage struct {
+        nom string
+        age int
+    }
+
+    perso := Personnage{"Hatim", 20}
+    fmt.Println(perso)
+
+    // accès juste à l'attribut age de notre structure Personnage
+    fmt.Println("je ne veux afficher que l'age du personnage => ", perso.age)
+
+    perso.age = 23 // modification de l'age
+    fmt.Println("3 ans plus tard ...", perso.age)
+
+
 }
